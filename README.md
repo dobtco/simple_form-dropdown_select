@@ -11,6 +11,7 @@ Simple Form - Dropdown Select Input
 ## Use it
 
 ```ruby
+### In your forms
 simple_form_for :foo do |f|
   f.input :employees,
           as: :dropdown_select,
@@ -19,11 +20,15 @@ simple_form_for :foo do |f|
 end
 ```
 
-#### application.js
-`require simple_form-dropdown_select_input`
+### application.js
+```
+//= require simple_form-dropdown_select_input
+```
 
-#### application.css
-`require simple_form-dropdown_select_input`
+### application.css
+```
+*= require simple_form-dropdown_select_input
+```
 
 ## Notes
 Currently does not allow `include_blank`.
