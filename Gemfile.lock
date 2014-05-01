@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    dropdown_select (0.0.1)
+    simple_form-dropdown_select (0.0.1)
 
 GEM
   remote: https://rubygems.org/
@@ -11,4 +11,4 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  dropdown_select!
+  simple_form-dropdown_select!
