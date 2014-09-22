@@ -1,0 +1,39 @@
+.dropdown_select_input {
+  .dropdown_toggle_button {
+    width: 240px;
+  }
+
+  .dropdown_menu {
+    width: 300px;
+
+    li {
+      a {
+        white-space: normal;
+        padding: 6px 10px 6px 20px;
+      }
+
+      a:hover, &.active a {
+        .dropdown_select_input_description {
+          color: #e5e5e5;
+        }
+      }
+    }
+  }
+
+  // Support for AutoSubmitter
+  .as_indicator {
+    right: -28px;
+  }
+}
+
+.dropdown_select_input_title {
+  font-weight: 600;
+  display: block;
+}
+
+.dropdown_select_input_description {
+  display: block;
+  color: #aaa;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}

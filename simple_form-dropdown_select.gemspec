@@ -24,5 +24,5 @@ Gem::Specification.new do |s|
   s.add_dependency 'coffee-script'
   s.add_dependency 'rspec-rails'
   s.add_dependency 'simple_form'
-  s.add_dependency 'stylus'
+  s.add_dependency 'sass'
 end
