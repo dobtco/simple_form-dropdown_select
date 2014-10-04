@@ -8,6 +8,12 @@ class DropdownSelectInput < SimpleForm::Inputs::CollectionInput
   end
 
   def input
+    if options[:allow_blank]
+      collection.unshift(
+        [options[:allow_blank] == true ? 'None' : options[:allow_blank], '']
+      )
+    end
+
     content_tag(:span, class: 'dropdown dropdown_select_input') do
       @builder.hidden_field(attribute_name, input_html_options) +
       content_tag(:a, class: 'dropdown_toggle_button', 'data-toggle' => 'dropdown') { selected_option[0] } +
