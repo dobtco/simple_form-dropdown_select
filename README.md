@@ -22,13 +22,10 @@ end
 
 ### application.js
 ```
-//= require simple_form-dropdown_select_input
+//= require simple_form/dropdown_select
 ```
 
 ### application.css
 ```
-*= require simple_form-dropdown_select_input
+*= require simple_form/dropdown_select
 ```
-
-## Notes
-Currently does not allow `include_blank`.
