@@ -21,7 +21,7 @@
           .siblings()
           .removeClass('active')
 
-        @$toggle.text($a.find('.dropdown_select_input_title').text())
+        @$toggle.text($a.find('.drop_rich_head').text())
 
   $.fn.extend dropdownSelectInput: (option, args...) ->
     @each ->
@@ -35,4 +35,4 @@
 ) window.jQuery, window
 
 $ ->
-  $(".dropdown_select_input").dropdownSelectInput()
+  $(".dropdown_rich").dropdownSelectInput()
