@@ -7,7 +7,7 @@ class DropdownSelectInput < SimpleForm::Inputs::CollectionInput
     collection.find { |x| x[1] == object.send(attribute_name) }
   end
 
-  def input
+  def input(wrapper_options = nil)
     if options[:allow_blank]
       collection.unshift(
         [options[:allow_blank] == true ? 'None' : options[:allow_blank], '']
