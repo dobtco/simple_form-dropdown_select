@@ -3,8 +3,16 @@ class DropdownSelectInput < SimpleForm::Inputs::CollectionInput
   include ActionView::Helpers::TagHelper
   include ActionView::Context
 
+  def current_value
+    input_html_options[:value] || object.try(:send, attribute_name)
+  end
+
   def selected_option
-    collection.find { |x| x[1] == object.send(attribute_name) }
+    if current_value
+      collection.find { |x| x[1] == current_value }
+    else
+      collection.first
+    end
   end
 
   def input(wrapper_options = nil)
