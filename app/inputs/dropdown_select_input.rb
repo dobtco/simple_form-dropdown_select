@@ -22,7 +22,7 @@ class DropdownSelectInput < SimpleForm::Inputs::CollectionInput
       )
     end
 
-    content_tag(:span, class: 'dropdown dropdown_rich') do
+    content_tag(:div, class: 'dropdown dropdown_rich') do
       @builder.hidden_field(attribute_name, input_html_options) +
       content_tag(:a, class: 'dropdown_toggle_button', 'data-toggle' => 'dropdown') { selected_option[0] } +
       content_tag(:div, class: 'dropdown_menu dropdown_menu_rich') {
