@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
   s.homepage = 'http://github.com/dobtco/simple_form-dropdown_select_input'
 
   s.add_dependency 'coffee-script'
+  s.add_dependency 'dvl-core'
   s.add_dependency 'rspec-rails'
   s.add_dependency 'simple_form'
   s.add_dependency 'sass'

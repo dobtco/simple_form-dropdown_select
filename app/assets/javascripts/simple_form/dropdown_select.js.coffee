@@ -7,7 +7,7 @@
       @options = $.extend({}, @defaults, options)
       @$el = $el
       @$input = $el.find('input')
-      @$toggle = $el.find('.dropdown_toggle_button')
+      @$toggle = $el.find('[data-toggle=dropdown]')
 
       @$el.on 'click', 'a[data-value]', (e) =>
         $a = $(e.currentTarget)
@@ -35,4 +35,4 @@
 ) window.jQuery, window
 
 $ ->
-  $(".dropdown_rich").dropdownSelectInput()
+  $('[data-dropdown-select]').dropdownSelectInput()
