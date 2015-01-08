@@ -26,6 +26,14 @@
   }
 }
 
+.drop_rich_head,
+.drop_rich_subhead {
+  word-break: break-all;
+  word-break: break-word; // Webkit non-standard
+  hyphens: auto;
+}
+
+
 .drop_rich_head {
   display: block;
   line-height: 1.5rem;
