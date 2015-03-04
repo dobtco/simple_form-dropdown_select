@@ -17,8 +17,7 @@
 
 .drop_rich_head,
 .drop_rich_subhead {
-  word-break: break-all;
-  word-break: break-word; // Webkit non-standard
+  word-wrap: break-word;
   hyphens: auto;
 }
 
